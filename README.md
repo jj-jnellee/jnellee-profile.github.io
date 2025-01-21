@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sniglet:wght@400&display=swap");
 
 pre, code, .blob-code, .blob-code-content, .blob-code-marker {
-  font-family: 'Nunito', sans-serif !important;
+  font-family: 'Sniglet', sans-serif !important;
 }
 
 # Who am I?
