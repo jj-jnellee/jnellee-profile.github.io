@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@450&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@450&display=swap");
 
 pre, code, .blob-code, .blob-code-content, .blob-code-marker {
-  font-family: monospace !important;
+  font-family: 'Comic Sans MS', sans-serif !important;
 }
 
 # A first-level heading
