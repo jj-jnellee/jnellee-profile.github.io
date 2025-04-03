@@ -31,6 +31,11 @@ small {font-size: 0.750rem; /* 12px */}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <style>
+        body {
+            background-color: #FFF9C4; /* Soft yellow */
+        }
+    </style>
 </head>
 <body>
     <header>
