@@ -35,36 +35,43 @@
         small {font-size: 0.750rem; /* 12px */}
 
         .container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px; /* Adjust space between sections */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            gap: 20px; /* Space between boxes */
+            padding: 20px;
         }
 
         .section {
-            padding: 50px;
+            padding: 10px; /* Reduced padding */
             text-align: center;
-            min-height: 300px; /* Ensures all sections have consistent height */
+            min-height: 200px; /* Minimum height to ensure uniformity */
+            background-color: white; /* White background for each section */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .section-1 {
             background-color: #faf8e8; /* Soft light color */
+            grid-column: span 1; /* Default width */
         }
 
         .section-2 {
             background-color: #f3f2f0; /* Slightly different color */
+            grid-column: span 2; /* Spans across 2 columns */
         }
 
         .section-3 {
             background-color: #fefffa; /* Soft yellow */
+            grid-column: span 1; /* Default width */
         }
 
         .section-4 {
             background-color: #FFF9C4; /* Light yellow */
+            grid-column: span 2; /* Spans across 2 columns */
         }
 
         .achievement-box {
             background-color: white;
-            padding: 20px;
+            padding: 10px;
             text-align: center;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             max-width: 100%;
@@ -98,7 +105,3 @@
         <section class="section section-4">
             <h2>Contact</h2>
             <p>Feel free to reach out for any inquiries.</p>
-        </section>
-    </div>
-</body>
-</html>
