@@ -7,12 +7,22 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Nunito:400');
         
+        /* Color Scheme Variables */
+        :root {
+            --text: #050315;
+            --background: #fcfbfd;
+            --primary: #837f98;
+            --secondary: #d39dcb;
+            --accent: #a6b891;
+        }
+
         body {
             font-family: 'Nunito';
             font-weight: 400;
             margin: 0;
             padding: 0;
-            background-color: #faf8e8; /* Default background color */
+            background-color: var(--background); /* Set background color */
+            color: var(--text); /* Set text color */
         }
 
         h1, h2, h3, h4, h5 {
@@ -37,35 +47,36 @@
         .container {
             display: grid;
             grid-template-columns: repeat(2, 1fr); /* 2 columns */
-            gap: 20px; /* Space between boxes */
+            gap: 0; /* Removed gap */
             padding: 20px;
         }
 
         .section {
-            padding: 10px; /* Reduced padding */
+            padding: 5px; /* Reduced padding */
             text-align: center;
             min-height: 200px; /* Minimum height to ensure uniformity */
             background-color: white; /* White background for each section */
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; /* Rounded edges */
         }
 
         .section-1 {
-            background-color: #faf8e8; /* Soft light color */
+            background-color: var(--primary); /* Primary color */
             grid-column: span 1; /* Default width */
         }
 
         .section-2 {
-            background-color: #f3f2f0; /* Slightly different color */
+            background-color: var(--secondary); /* Secondary color */
             grid-column: span 2; /* Spans across 2 columns */
         }
 
         .section-3 {
-            background-color: #fefffa; /* Soft yellow */
+            background-color: var(--accent); /* Accent color */
             grid-column: span 1; /* Default width */
         }
 
         .section-4 {
-            background-color: #FFF9C4; /* Light yellow */
+            background-color: var(--primary); /* Primary color */
             grid-column: span 2; /* Spans across 2 columns */
         }
 
@@ -76,6 +87,7 @@
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             max-width: 100%;
             margin: 0 auto;
+            border-radius: 10px; /* Rounded edges */
         }
     </style>
 </head>
@@ -105,3 +117,7 @@
         <section class="section section-4">
             <h2>Contact</h2>
             <p>Feel free to reach out for any inquiries.</p>
+        </section>
+    </div>
+</body>
+</html>
