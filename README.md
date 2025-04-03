@@ -23,3 +23,18 @@ h4 {font-size: 1.777rem; /* 28.48px */}
 h5 {font-size: 1.333rem; /* 21.28px */}
 
 small {font-size: 0.750rem; /* 12px */}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+</body>
+</html>
