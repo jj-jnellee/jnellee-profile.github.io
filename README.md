@@ -35,9 +35,17 @@
         small {font-size: 0.750rem; /* 12px */}
 
         .achievement-section {
-            background-color: #faf8e8; /* New section color */
-            padding: 50px;
+            background-color: #faf8e8; /* Outer section color */
+            padding: 50px 20px; /* Adjusted padding */
+        }
+
+        .achievement-box {
+            background-color: white; /* Inner box color */
+            max-width: 100%; /* Full width */
+            margin: 0 auto; /* Center the box */
+            padding: 20px;
             text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -47,7 +55,9 @@
     </header>
 
     <section class="achievement-section">
-        <h2>My Recent Achievement</h2>
+        <div class="achievement-box">
+            <h2>My Recent Achievement</h2>
+        </div>
     </section>
 </body>
 </html>
