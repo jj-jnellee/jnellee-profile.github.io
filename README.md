@@ -34,12 +34,10 @@
 
         small {font-size: 0.750rem; /* 12px */}
 
-        .achievement-box {
-            background-color: white;
-            padding: 20px;
+        .achievement-section {
+            background-color: #faf8e8; /* New section color */
+            padding: 50px;
             text-align: center;
-            margin: 30px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -48,8 +46,8 @@
         <h1>My Website</h1>
     </header>
 
-    <div class="achievement-box">
+    <section class="achievement-section">
         <h2>My Recent Achievement</h2>
-    </div>
+    </section>
 </body>
 </html>
