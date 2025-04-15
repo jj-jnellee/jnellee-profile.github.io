@@ -85,7 +85,7 @@
     }
 
     .section-achievement {
-      background-color: #faf8e8;
+      background-color: var(--secondary);
       width: 100%;
       padding: 40px 10px;
       text-align: center;
