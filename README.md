@@ -40,7 +40,7 @@
 
     .container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 30% 70%;
       gap: 20px;
       padding: 10px;
     }
@@ -50,11 +50,12 @@
       text-align: center;
       min-height: 200px;
       border-radius: 10px;
+      font-family: 'Nunito', sans-serif;
     }
 
     .section-3 {
       background-color: var(--accent);
-      color: var(--background);
+      color: var(--text);
     }
 
     .section-4 {
@@ -78,14 +79,14 @@
 
   <div class="container">
     <!-- Side-by-side boxes -->
-    <section class="section section-3">
-      <h2>About Me</h2>
-      <p>Learn more about me and my journey here.</p>
-    </section>
-
     <section class="section section-4">
       <h2>Contact</h2>
       <p>Feel free to reach out for any inquiries.</p>
+    </section>
+
+    <section class="section section-3">
+      <h2>About Me</h2>
+      <p>Learn more about me and my journey here.</p>
     </section>
   </div>
 
