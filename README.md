@@ -40,9 +40,10 @@
 
     .container {
       display: grid;
-      grid-template-columns: 30% 70%;
+      grid-template-columns: 70% 30%;
       gap: 20px;
       padding: 10px;
+      align-items: start;
     }
 
     .section {
@@ -64,7 +65,7 @@
     }
 
     .section-achievement {
-      background-color: var(--secondary);
+      background-color: var(--accent);
       grid-column: span 2;
       padding: 40px 10px;
       text-align: center;
@@ -79,14 +80,14 @@
 
   <div class="container">
     <!-- Side-by-side boxes -->
-    <section class="section section-4">
-      <h2>Contact</h2>
-      <p>Feel free to reach out for any inquiries.</p>
-    </section>
-
     <section class="section section-3">
       <h2>About Me</h2>
       <p>Learn more about me and my journey here.</p>
+    </section>
+
+    <section class="section section-4">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for any inquiries.</p>
     </section>
   </div>
 
