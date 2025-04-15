@@ -61,17 +61,18 @@
       color: var(--text);
       flex: 7;
       justify-content: flex-start;
-      position: relative;
       padding-left: 20px;
     }
 
-    .section-3::after {
-      content: "";
-      position: absolute;
-      right: 20px;
-      top: 10%;
-      bottom: 10%;
+    .about-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .about-divider {
       width: 2px;
+      height: 60%;
       background-color: var(--text);
     }
 
@@ -84,7 +85,7 @@
     }
 
     .section-achievement {
-      background-color: var(--accent);
+      background-color: #faf8e8;
       width: 100%;
       padding: 40px 10px;
       text-align: center;
@@ -101,8 +102,9 @@
   <div class="container">
     <!-- Side-by-side boxes -->
     <section class="section section-3">
-      <div>
+      <div class="about-content">
         <h2>About Me</h2>
+        <div class="about-divider"></div>
         <p>Learn more about me and my journey here.</p>
       </div>
     </section>
