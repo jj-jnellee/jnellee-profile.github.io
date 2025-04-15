@@ -39,36 +39,56 @@
     small { font-size: 0.750rem; }
 
     .container {
-      display: grid;
-      grid-template-columns: 70% 30%;
+      display: flex;
+      flex-direction: row;
       gap: 20px;
       padding: 10px;
-      align-items: start;
+      justify-content: flex-start;
     }
 
     .section {
       padding: 10px;
-      text-align: center;
       min-height: 200px;
       border-radius: 10px;
       font-family: 'Nunito', sans-serif;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
     }
 
     .section-3 {
       background-color: var(--accent);
       color: var(--text);
+      flex: 7;
+      justify-content: flex-start;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .section-3::after {
+      content: "";
+      position: absolute;
+      right: 20px;
+      top: 10%;
+      bottom: 10%;
+      width: 2px;
+      background-color: var(--text);
     }
 
     .section-4 {
       background-color: var(--primary);
       color: var(--background);
+      flex: 3;
+      text-align: center;
+      justify-content: center;
     }
 
     .section-achievement {
       background-color: var(--accent);
-      grid-column: span 2;
+      width: 100%;
       padding: 40px 10px;
       text-align: center;
+      box-sizing: border-box;
     }
 
   </style>
@@ -81,13 +101,17 @@
   <div class="container">
     <!-- Side-by-side boxes -->
     <section class="section section-3">
-      <h2>About Me</h2>
-      <p>Learn more about me and my journey here.</p>
+      <div>
+        <h2>About Me</h2>
+        <p>Learn more about me and my journey here.</p>
+      </div>
     </section>
 
     <section class="section section-4">
-      <h2>Contact</h2>
-      <p>Feel free to reach out for any inquiries.</p>
+      <div>
+        <h2>Contact</h2>
+        <p>Feel free to reach out for any inquiries.</p>
+      </div>
     </section>
   </div>
 
