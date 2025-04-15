@@ -1,123 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Nunito:400');
-        
-        /* Color Scheme Variables */
-        :root {
-            --text: #050315;
-            --background: #fcfbfd;
-            --primary: #837f98;
-            --secondary: #d39dcb;
-            --accent: #a6b891;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Website</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Nunito:400');
 
-        body {
-            font-family: 'Nunito';
-            font-weight: 400;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background); /* Set background color */
-            color: var(--text); /* Set text color */
-        }
+    :root {
+      --text: #050315;
+      --background: #fcfbfd;
+      --primary: #837f98;
+      --secondary: #d39dcb;
+      --accent: #a6b891;
+    }
 
-        h1, h2, h3, h4, h5 {
-            font-family: 'Montserrat';
-            font-weight: 700;
-        }
+    body {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background);
+      color: var(--text);
+    }
 
-        html {font-size: 100%;} /* 16px */
+    h1, h2, h3, h4, h5 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
 
-        h1 {font-size: 4.210rem; /* 67.36px */}
+    html { font-size: 100%; }
 
-        h2 {font-size: 3.158rem; /* 50.56px */}
+    h1 { font-size: 4.210rem; }
+    h2 { font-size: 3.158rem; }
+    h3 { font-size: 2.369rem; }
+    h4 { font-size: 1.777rem; }
+    h5 { font-size: 1.333rem; }
+    small { font-size: 0.750rem; }
 
-        h3 {font-size: 2.369rem; /* 37.92px */}
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      padding: 20px;
+      row-gap: 20px; /* Add vertical spacing between rows */
+    }
 
-        h4 {font-size: 1.777rem; /* 28.48px */}
+    .section {
+      padding: 5px;
+      text-align: center;
+      min-height: 200px;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
 
-        h5 {font-size: 1.333rem; /* 21.28px */}
+    .section-1 {
+      background-color: var(--primary);
+      grid-column: span 2; /* Full width row */
+    }
 
-        small {font-size: 0.750rem; /* 12px */}
+    .section-2 {
+      background-color: var(--secondary);
+      grid-column: span 2; /* Full width row */
+    }
 
-        .container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 2 columns */
-            gap: 0; /* Removed gap */
-            padding: 20px;
-        }
+    .section-3 {
+      background-color: var(--accent); /* Green */
+      grid-column: span 1; /* Half width */
+    }
 
-        .section {
-            padding: 5px; /* Reduced padding */
-            text-align: center;
-            min-height: 200px; /* Minimum height to ensure uniformity */
-            background-color: white; /* White background for each section */
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 10px; /* Rounded edges */
-        }
+    .section-4 {
+      background-color: var(--primary); /* Grey */
+      grid-column: span 1; /* Half width */
+    }
 
-        .section-1 {
-            background-color: var(--primary); /* Primary color */
-            grid-column: span 1; /* Default width */
-        }
-
-        .section-2 {
-            background-color: var(--secondary); /* Secondary color */
-            grid-column: span 2; /* Spans across 2 columns */
-        }
-
-        .section-3 {
-            background-color: var(--accent); /* Accent color */
-            grid-column: span 1; /* Default width */
-        }
-
-        .section-4 {
-            background-color: var(--primary); /* Primary color */
-            grid-column: span 2; /* Spans across 2 columns */
-        }
-
-        .achievement-box {
-            background-color: white;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 100%;
-            margin: 0 auto;
-            border-radius: 10px; /* Rounded edges */
-        }
-    </style>
+    .achievement-box {
+      background-color: white;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 100%;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>My Website</h1>
-    </header>
+  <header>
+    <h1>My Website</h1>
+  </header>
 
-    <div class="container">
-        <section class="section section-1">
-            <h2>Introduction</h2>
-            <p>Welcome to my website. This is the first section.</p>
-        </section>
+  <div class="container">
+    <!-- Full-width section -->
+    <section class="section section-1">
+      <h2>Introduction</h2>
+      <p>Welcome to my website. This is the first section.</p>
+    </section>
 
-        <section class="section section-2">
-            <h2>My Recent Achievement</h2>
-            <div class="achievement-box">
-                <p>This is where my recent achievements will be displayed.</p>
-            </div>
-        </section>
+    <!-- Full-width section with inner white box -->
+    <section class="section section-2">
+      <h2>My Recent Achievement</h2>
+      <div class="achievement-box">
+        <p>This is where my recent achievements will be displayed.</p>
+      </div>
+    </section>
 
-        <section class="section section-3">
-            <h2>About Me</h2>
-            <p>Learn more about me and my journey here.</p>
-        </section>
+    <!-- Two boxes side by side with spacing below -->
+    <section class="section section-3">
+      <h2>About Me</h2>
+      <p>Learn more about me and my journey here.</p>
+    </section>
 
-        <section class="section section-4">
-            <h2>Contact</h2>
-            <p>Feel free to reach out for any inquiries.</p>
-        </section>
-    </div>
+    <section class="section section-4">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for any inquiries.</p>
+    </section>
+  </div>
 </body>
 </html>
