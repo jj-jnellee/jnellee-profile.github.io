@@ -41,13 +41,12 @@
     .container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 0;
+      gap: 20px; /* Equal spacing both horizontally and vertically */
       padding: 20px;
-      row-gap: 20px; /* Add vertical spacing between rows */
     }
 
     .section {
-      padding: 5px;
+      padding: 10px;
       text-align: center;
       min-height: 200px;
       background-color: white;
@@ -55,24 +54,17 @@
       border-radius: 10px;
     }
 
-    .section-1 {
-      background-color: var(--primary);
-      grid-column: span 2; /* Full width row */
-    }
-
-    .section-2 {
-      background-color: var(--secondary);
-      grid-column: span 2; /* Full width row */
-    }
-
     .section-3 {
       background-color: var(--accent); /* Green */
-      grid-column: span 1; /* Half width */
     }
 
     .section-4 {
       background-color: var(--primary); /* Grey */
-      grid-column: span 1; /* Half width */
+    }
+
+    .section-achievement {
+      background-color: var(--secondary); /* Pink */
+      grid-column: span 2;
     }
 
     .achievement-box {
@@ -92,21 +84,7 @@
   </header>
 
   <div class="container">
-    <!-- Full-width section -->
-    <section class="section section-1">
-      <h2>Introduction</h2>
-      <p>Welcome to my website. This is the first section.</p>
-    </section>
-
-    <!-- Full-width section with inner white box -->
-    <section class="section section-2">
-      <h2>My Recent Achievement</h2>
-      <div class="achievement-box">
-        <p>This is where my recent achievements will be displayed.</p>
-      </div>
-    </section>
-
-    <!-- Two boxes side by side with spacing below -->
+    <!-- Side-by-side boxes -->
     <section class="section section-3">
       <h2>About Me</h2>
       <p>Learn more about me and my journey here.</p>
@@ -115,6 +93,14 @@
     <section class="section section-4">
       <h2>Contact</h2>
       <p>Feel free to reach out for any inquiries.</p>
+    </section>
+
+    <!-- Full-width achievement section -->
+    <section class="section section-achievement">
+      <h2>My Recent Achievement</h2>
+      <div class="achievement-box">
+        <p>This is where my recent achievements will be displayed.</p>
+      </div>
     </section>
   </div>
 </body>
