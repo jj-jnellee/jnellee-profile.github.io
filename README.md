@@ -41,41 +41,34 @@
     .container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px; /* Equal spacing both horizontally and vertically */
-      padding: 20px;
+      gap: 20px;
+      padding: 10px;
     }
 
     .section {
       padding: 10px;
       text-align: center;
       min-height: 200px;
-      background-color: white;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
     }
 
     .section-3 {
-      background-color: var(--accent); /* Updated accent */
+      background-color: var(--accent);
+      color: var(--background);
     }
 
     .section-4 {
-      background-color: var(--primary); /* Updated primary */
+      background-color: var(--primary);
+      color: var(--background);
     }
 
     .section-achievement {
-      background-color: var(--secondary); /* Updated secondary */
+      background-color: var(--secondary);
       grid-column: span 2;
+      padding: 40px 10px;
+      text-align: center;
     }
 
-    .achievement-box {
-      background-color: white;
-      padding: 10px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      max-width: 100%;
-      margin: 0 auto;
-      border-radius: 10px;
-    }
   </style>
 </head>
 <body>
@@ -94,14 +87,12 @@
       <h2>Contact</h2>
       <p>Feel free to reach out for any inquiries.</p>
     </section>
-
-    <!-- Full-width achievement section -->
-    <section class="section section-achievement">
-      <h2>My Recent Achievement</h2>
-      <div class="achievement-box">
-        <p>This is where my recent achievements will be displayed.</p>
-      </div>
-    </section>
   </div>
+
+  <!-- Full-width achievement section -->
+  <section class="section section-achievement">
+    <h2>My Recent Achievement</h2>
+    <p>This is where my recent achievements will be displayed.</p>
+  </section>
 </body>
 </html>
