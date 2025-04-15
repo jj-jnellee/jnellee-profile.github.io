@@ -8,11 +8,11 @@
     @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Nunito:400');
 
     :root {
-      --text: #050315;
-      --background: #fcfbfd;
-      --primary: #837f98;
-      --secondary: #d39dcb;
-      --accent: #a6b891;
+      --text: #050316;
+      --background: #fdfcfd;
+      --primary: #726f90;
+      --secondary: #c5b4bf;
+      --accent: #ad9499;
     }
 
     body {
@@ -55,15 +55,15 @@
     }
 
     .section-3 {
-      background-color: var(--accent); /* Green */
+      background-color: var(--accent); /* Updated accent */
     }
 
     .section-4 {
-      background-color: var(--primary); /* Grey */
+      background-color: var(--primary); /* Updated primary */
     }
 
     .section-achievement {
-      background-color: var(--secondary); /* Pink */
+      background-color: var(--secondary); /* Updated secondary */
       grid-column: span 2;
     }
 
