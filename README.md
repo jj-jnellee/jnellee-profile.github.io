@@ -42,8 +42,9 @@
       display: flex;
       flex-direction: row;
       gap: 20px;
-      padding: 10px;
-      justify-content: flex-start;
+      padding: 0 10px;
+      justify-content: space-between;
+      box-sizing: border-box;
     }
 
     .section {
@@ -61,7 +62,7 @@
       color: var(--text);
       flex: 7;
       justify-content: flex-start;
-      padding-left: 20px;
+      width: 100%;
     }
 
     .about-content {
@@ -72,7 +73,7 @@
 
     .about-divider {
       width: 2px;
-      height: 60%;
+      height: 50px;
       background-color: var(--text);
     }
 
@@ -82,6 +83,8 @@
       flex: 3;
       text-align: center;
       justify-content: center;
+      display: flex;
+      align-items: center;
     }
 
     .section-achievement {
@@ -90,6 +93,10 @@
       padding: 40px 10px;
       text-align: center;
       box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
   </style>
